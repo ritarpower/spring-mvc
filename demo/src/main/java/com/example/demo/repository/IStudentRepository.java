@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface IStudentRepository {
     List<Student> findAll();
+
+    void addStudent(Student student);
 }

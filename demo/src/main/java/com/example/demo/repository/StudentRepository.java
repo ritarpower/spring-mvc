@@ -19,4 +19,9 @@ public class StudentRepository implements IStudentRepository {
     public List<Student> findAll() {
         return students;
     }
+
+    @Override
+    public void addStudent(Student student) {
+        students.add(student);
+    }
 }

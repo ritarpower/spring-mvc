@@ -6,5 +6,10 @@
 </head>
 <body>
 <h1>Them moi</h1>
+<form th:action="@{/add-student}" method="post" th:object="${student}">
+    Ten <input type="text" th:field="*{name}">
+    Tuoi <input type="text" th:field="*{age}">
+    <input type="submit" value="Them moi">
+</form>
 </body>
 </html>

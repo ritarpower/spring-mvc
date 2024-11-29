@@ -11,8 +11,14 @@ import java.util.List;
 @Service
 public class StudentService implements IStudentService {
     private final IStudentRepository studentRepository= new StudentRepository();
+
     @Override
     public List<Student> findAll() {
         return studentRepository.findAll();
+    }
+
+    @Override
+    public void addStudent(Student student) {
+        studentRepository.addStudent(student);
     }
 }
